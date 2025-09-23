@@ -9,31 +9,28 @@
 </head>
 
 <body class="container">
-    <div class="text-center">
+    <div id="messageDiv" class="text-center">
         <h1 class="text-primary">Please Check the Console for Output</h1>
     </div>
 
-    <!-- <script src="dev1.js"></script>
-    <script src="dev2.js"></script>
+    <div id="ajaxDiv" style="display: none;">
+        <div class="row mt-3" id="aDiv_btnArea">
 
-    <script>
-        dev1.hello();
-        dev2.hello();
-    </script> -->
+        </div>
 
-    <!-- <script>
-        function test1() {
-            console.log(this);
-        }
-
-        // Function Expression
-        const test2 = function () {
-            console.log(this);
-        }
-
-        test1();
-        test2();
-    </script> -->
+        <div class="row mt-3">
+            <table id="postTable" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>TITLE</th>
+                        <th>BODY</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>

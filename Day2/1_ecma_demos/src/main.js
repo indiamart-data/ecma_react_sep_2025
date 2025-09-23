@@ -17,5 +17,6 @@
 // import './2_objects/3_class';
 // import './2_objects/4_inheritance';
 
-import './3_modules/usage';
+// import './3_modules/usage';
 
+import './4_async/dom-handler';
