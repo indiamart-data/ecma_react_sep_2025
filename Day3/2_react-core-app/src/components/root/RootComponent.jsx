@@ -9,12 +9,15 @@
 
 import ComponentOne from '../5_css-modules/comp-one/ComponentOne'
 import ComponentTwo from '../5_css-modules/comp-two/ComponentTwo'
+import ComponentWithState from '../6_comp-state/ComponentWithState';
 
 const RootComponent = () => {
     return (
         <div className='container'>
-            <ComponentOne />
-            <ComponentTwo />
+            {/* <ComponentOne />
+            <ComponentTwo /> */}
+
+            <ComponentWithState />
         </div>
     );
 };
