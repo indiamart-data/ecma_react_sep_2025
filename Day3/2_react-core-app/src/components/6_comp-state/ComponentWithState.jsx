@@ -14,11 +14,11 @@ import { useState } from "react";
 //         console.log("Render, State:", this.state);
 
 // return (
-//     <div>
+//     <>
 //         <h1 className="text-primary text-center">Component With State</h1>
 //         <h2 className="text-success">Hello, {this.state.name}</h2>
 //         <h2 className="text-success">{this.message}</h2>
-//     </div>
+//     </>
 // );
 //     }
 // }
@@ -30,10 +30,10 @@ const ComponentWithState = function () {
     const [name] = useState("Manish");
     
     return (
-        <div>
+        <>
             <h1 className="text-primary text-center">Component With State</h1>
             <h2 className="text-success">Hello, {name}</h2>
-        </div>
+        </>
     );
 }
 

@@ -10,6 +10,7 @@
 import ComponentOne from '../5_css-modules/comp-one/ComponentOne'
 import ComponentTwo from '../5_css-modules/comp-two/ComponentTwo'
 import ComponentWithState from '../6_comp-state/ComponentWithState';
+import ComponentWithProps from '../7_comp-props/ComponentWithProps';
 
 const RootComponent = () => {
     return (
@@ -17,7 +18,8 @@ const RootComponent = () => {
             {/* <ComponentOne />
             <ComponentTwo /> */}
 
-            <ComponentWithState />
+            {/* <ComponentWithState /> */}
+            <ComponentWithProps id={1} name={"Manish"} address={{ city: "Pune", state: "MH" }} />
         </div>
     );
 };
