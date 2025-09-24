@@ -45,7 +45,7 @@
 import React, { useState } from 'react';
 
 // const ComponentWithProps = (props) => {
-//     const [data] = useState(JSON.parse(JSON.stringify(this.props)));
+//     const [data] = useState(JSON.parse(JSON.stringify(props)));
 
 //     return (
 //         <>
@@ -56,8 +56,6 @@ import React, { useState } from 'react';
 
 
 const ComponentWithProps = ({ id, name }) => {
-    // const [data] = useState(JSON.parse(JSON.stringify(this.props)));
-
     return (
         <>
             <h1 className="text-primary text-center">Component With Props</h1>
