@@ -68,14 +68,14 @@
 // export default HelloComponent;
 
 // -----------------------------------------------------------
-function HelloComponent() {
-    return (
-        <>
-            <h1>Hello World!</h1>
-            <h1>Function Declaration!</h1>
-        </>
-    )
-}
+// function HelloComponent() {
+//     return (
+//         <>
+//             <h1>Hello World!</h1>
+//             <h1>Function Declaration!</h1>
+//         </>
+//     )
+// }
 
 // const HelloComponent = function () {
 //     return (
@@ -101,5 +101,30 @@ function HelloComponent() {
 //         <h1>Singleline Arrow Function!</h1>
 //     </>
 // )
+
+// export default HelloComponent;
+
+
+// ----------------------------------- Using Global CSS
+
+// const HelloComponent = () => (
+//     <>
+//         <h1 className="red">Hello World!</h1>
+//         <h1>Singleline Arrow Function!</h1>
+//     </>
+// )
+
+// export default HelloComponent;
+
+const HelloComponent = () => (
+    <div className="container-fluid">
+        <h1 className="text-primary">Hello World!</h1>
+        <h1 className="text-success">Singleline Arrow Function!</h1>
+        <h2 className="text-warning">
+            Activity Icon  
+            <i className="bi bi-activity"></i>
+        </h2>
+    </div>
+)
 
 export default HelloComponent;
