@@ -28,11 +28,11 @@ import PropTypes from 'prop-types';
 //     }
 // }
 
-const PropTypesComponent = () => {
+const PropTypesComponent = (props) => {
     return (
         <>
-            <h2 className="text-primary">Hello, {this.props.name.toUpperCase()}</h2>
-            <h2 className="text-primary">You are from, {this.props.city}</h2>
+            <h2 className="text-primary">Hello, {props.name.toUpperCase()}</h2>
+            <h2 className="text-primary">You are from, {props.city}</h2>
         </>
     );
 };
