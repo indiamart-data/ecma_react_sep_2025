@@ -15,9 +15,11 @@ import ComponentWithProps from '../7_comp-props/ComponentWithProps';
 import COne from '../7_comp-props/COne';
 import CTwo from '../7_comp-props/CTwo';
 
-const data = { id: 1, name: "Manish", address: { city: "Pune", state: "MH" } };
+// const data = { id: 1, name: "Manish", address: { city: "Pune", state: "MH" } };
 
 const RootComponent = () => {
+    const [data, setData] = useState({ id: 1, name: "Manish", address: { city: "Pune", state: "MH" } });
+
     return (
         <div className='container'>
             {/* <ComponentOne />
@@ -26,7 +28,7 @@ const RootComponent = () => {
             {/* <ComponentWithState /> */}
             <ComponentWithProps id={1} name={"Manish"} address={{ city: "Pune", state: "MH" }} />
 
-            <COne data={data} />
+            <COne data={data} setData={setData}/>
             <CTwo data={data} />
         </div>
     );
