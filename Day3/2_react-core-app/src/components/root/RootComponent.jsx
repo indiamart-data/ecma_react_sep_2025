@@ -14,6 +14,7 @@ import ComponentWithState from '../6_comp-state/ComponentWithState';
 import ComponentWithProps from '../7_comp-props/ComponentWithProps';
 import COne from '../7_comp-props/COne';
 import CTwo from '../7_comp-props/CTwo';
+import PropTypesRoot from '../8_prop-types/PropTypesComponent';
 
 // const data = { id: 1, name: "Manish", address: { city: "Pune", state: "MH" } };
 
@@ -26,10 +27,12 @@ const RootComponent = () => {
             <ComponentTwo /> */}
 
             {/* <ComponentWithState /> */}
-            <ComponentWithProps id={1} name={"Manish"} address={{ city: "Pune", state: "MH" }} />
+            {/* <ComponentWithProps id={1} name={"Manish"} address={{ city: "Pune", state: "MH" }} />
 
             <COne data={data} setData={setData}/>
-            <CTwo data={data} />
+            <CTwo data={data} /> */}
+
+            <PropTypesRoot />
         </div>
     );
 };

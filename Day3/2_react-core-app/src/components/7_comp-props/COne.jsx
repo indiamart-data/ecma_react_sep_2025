@@ -5,7 +5,7 @@ const COne = (props) => {
     // props.data.name = "Abhijeet";
     // props.data.address.city = "Mumbai";
 
-    props.setData({ id: 2, name: "Abhijeet", address: { city: "Mumbai" } });
+    // props.setData({ id: 2, name: "Abhijeet", address: { city: "Mumbai" } });
 
     return (
         <div>
