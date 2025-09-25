@@ -30,7 +30,7 @@ class CounterAssignment extends Component {
             <div>
                 <Counter />
                 <hr />
-                <Counter />
+                <Counter interval={10}/>
             </div>
         );
     }

@@ -38,9 +38,9 @@ const RootComponent = () => {
             {/* <PropTypesRoot /> */}
             {/* <ComponentWithBehavior /> */}
 
-            <EventComponent />    
+            {/* <EventComponent />     */}
 
-            {/* <CounterAssignment /> */}
+            <CounterAssignment />
         </div>
     );
 };
