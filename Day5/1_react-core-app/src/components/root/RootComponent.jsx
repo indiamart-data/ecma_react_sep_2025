@@ -1,6 +1,7 @@
 import ListRoot from '../1_working_with_arrays/ListComponent';
 import CrudAssignment from '../2_assignment/CrudAssignment';
 import HookFormsDemo from '../3_hook-forms/HookFormsDemo';
+import AjaxComponent from '../4_ajax/AjaxComponent';
 import ErrorHandler from '../common/ErrorHandler';
 
 const RootComponent = () => {
@@ -8,8 +9,9 @@ const RootComponent = () => {
         <ErrorHandler>
             <div className='container'>
                 {/* <ListRoot /> */}
-                <CrudAssignment />
+                {/* <CrudAssignment /> */}
                 {/* <HookFormsDemo /> */}
+                <AjaxComponent />
             </div>
         </ErrorHandler>
     );
