@@ -12,7 +12,9 @@ const RootComponent = () => {
                 {/* <CounterAssignment /> */}
                 {/* <CounterWithReducer /> */}
                 {/* <CounterWithContext /> */}
-                <ControlledVsUncontrolledComponent />
+                <ErrorHandler>
+                    <ControlledVsUncontrolledComponent />
+                </ErrorHandler>
                 <hr />
                 <CalculatorAssignment />
             </div>
