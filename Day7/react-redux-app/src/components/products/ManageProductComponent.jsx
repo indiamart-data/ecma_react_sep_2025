@@ -26,6 +26,12 @@ const ManageProductComponent = () => {
         setProduct({ ...product, [e.target.name]: e.target.value });
     }
 
+    //   1. .unwrap() method: The code uses .unwrap(), which extracts the actual payload from the Redux Toolkit action result and throws an error if the
+    //   operation fails.
+    //   2. Navigation dependency: The component needs to wait for the save operation to complete successfully before navigating to '/products' (line 37). Without await, the
+    //   navigation would happen immediately, even if the save operation fails.
+    //   3. Error handling: The try-catch block can only properly catch errors from the async thunk if you use await with .unwrap().
+    //   4. Sequential operations: The code flow is: save → wait for completion → navigate. This requires await to ensure proper sequencing.
     const saveProduct = async (e) => {
         e.preventDefault();
         try {

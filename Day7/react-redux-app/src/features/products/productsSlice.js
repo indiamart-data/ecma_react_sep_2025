@@ -87,6 +87,24 @@ export const productsSlice = createSlice({
                 state.status = 'failed';
                 state.error = action.error.message;
             })
+            // Delete Product
+            .addCase(deleteProduct.pending, (state) => {
+                state.status = 'loading';
+                state.error = null;
+            })
+            .addCase(deleteProduct.fulfilled, (state, action) => {
+                state.status = 'succeeded';
+                const { id } = action.payload;
+                const existingProduct = state.items.find(product => product.id === id);
+                if (existingProduct) {
+                    state.items = state.items.filter(product => product.id !== id);
+                }
+                state.error = null;
+            })
+            .addCase(deleteProduct.rejected, (state, action) => {
+                state.status = 'failed';
+                state.error = action.error.message;
+            })
     }
 });
 
@@ -116,6 +134,16 @@ export const updateProduct = createAsyncThunk(
             return await productsAPIClient.updateProduct(product);
         } catch (error) {
             return rejectWithValue(error.message || 'Error occurred while updating product');
+        }
+    }
+);
+
+export const deleteProduct = createAsyncThunk(
+    'products/deleteProduct', async (productId, { rejectWithValue }) => {
+        try {
+            return await productsAPIClient.deleteProduct({ id: productId });
+        } catch (error) {
+            return rejectWithValue(error.message || 'Error occurred while deleting product');
         }
     }
 );

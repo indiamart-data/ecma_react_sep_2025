@@ -75,7 +75,7 @@ const productAPIClient = {
         var promise = new Promise((resolve, reject) => {
             return fetch(request).then(res => {
                 res.json().then(() => {
-                    resolve("Record Deleted");
+                    resolve({ id: p.id, message: "Record Deleted" });
                 }, (err) => {
                     reject("JSON Parse Error");
                 })
